@@ -2,20 +2,20 @@ apiVersion: appstudio.redhat.com/v1alpha1
 kind: Snapshot
 metadata:
   annotations:
-    build.appstudio.openshift.io/repo: https://github.com/rh-gitops-midstream/release?rev=2e876a213e64b330a0fa7c3ac9ed9d0efb9eb225
-    build.appstudio.redhat.com/commit_sha: 2e876a213e64b330a0fa7c3ac9ed9d0efb9eb225
-    build.appstudio.redhat.com/pull_request_number: "693"
+    build.appstudio.openshift.io/repo: https://github.com/rh-gitops-midstream/release?rev=4538189c73f4df40aa2015955451ad59d5957d79
+    build.appstudio.redhat.com/commit_sha: 4538189c73f4df40aa2015955451ad59d5957d79
+    build.appstudio.redhat.com/pull_request_number: "715"
     build.appstudio.redhat.com/target_branch: release-1.17
     pac.test.appstudio.openshift.io/branch: release-1.17
     pac.test.appstudio.openshift.io/cancel-in-progress: "true"
-    pac.test.appstudio.openshift.io/check-run-id: "64821723339"
+    pac.test.appstudio.openshift.io/check-run-id: "65144100404"
     pac.test.appstudio.openshift.io/controller-info: '{"name":"default","configmap":"pipelines-as-code","secret":"pipelines-as-code-secret",
       "gRepo": "pipelines-as-code"}'
     pac.test.appstudio.openshift.io/event-type: push
-    pac.test.appstudio.openshift.io/git-auth-secret: pac-gitauth-kdiqfw
+    pac.test.appstudio.openshift.io/git-auth-secret: pac-gitauth-pnvnpo
     pac.test.appstudio.openshift.io/git-provider: github
     pac.test.appstudio.openshift.io/installation-id: "56531091"
-    pac.test.appstudio.openshift.io/log-url: https://konflux-ui.apps.stone-prd-rh01.pg1f.p1.openshiftapps.com/ns/rh-openshift-gitops-tenant/pipelinerun/gitops-operator-bundle-1-17-on-push-qxdmx
+    pac.test.appstudio.openshift.io/log-url: https://konflux-ui.apps.stone-prd-rh01.pg1f.p1.openshiftapps.com/ns/rh-openshift-gitops-tenant/pipelinerun/gitops-operator-bundle-1-17-on-push-qr8nb
     pac.test.appstudio.openshift.io/max-keep-runs: "3"
     pac.test.appstudio.openshift.io/on-cel-expression: |-
       event == "push" && target_branch == "release-1.17" && (
@@ -23,145 +23,145 @@ metadata:
         ".tekton/gitops-operator-bundle-push.yaml".pathChanged()
       )
     pac.test.appstudio.openshift.io/original-prname: gitops-operator-bundle-1-17-on-push
-    pac.test.appstudio.openshift.io/pull-request: "693"
+    pac.test.appstudio.openshift.io/pull-request: "715"
     pac.test.appstudio.openshift.io/repo-url: https://github.com/rh-gitops-midstream/release
     pac.test.appstudio.openshift.io/repository: dex-main
     pac.test.appstudio.openshift.io/scm-reporting-plr-started: "true"
     pac.test.appstudio.openshift.io/sender: svghadi
-    pac.test.appstudio.openshift.io/sha: 2e876a213e64b330a0fa7c3ac9ed9d0efb9eb225
+    pac.test.appstudio.openshift.io/sha: 4538189c73f4df40aa2015955451ad59d5957d79
     pac.test.appstudio.openshift.io/sha-title: 'chore(bundle): latest bundle updates
-      for v1.17.5-2 (#693)'
-    pac.test.appstudio.openshift.io/sha-url: https://github.com/rh-gitops-midstream/release/commit/2e876a213e64b330a0fa7c3ac9ed9d0efb9eb225
+      for v1.17.5-3 (#715)'
+    pac.test.appstudio.openshift.io/sha-url: https://github.com/rh-gitops-midstream/release/commit/4538189c73f4df40aa2015955451ad59d5957d79
     pac.test.appstudio.openshift.io/source-branch: refs/heads/release-1.17
     pac.test.appstudio.openshift.io/source-repo-url: https://github.com/rh-gitops-midstream/release
     pac.test.appstudio.openshift.io/state: completed
     pac.test.appstudio.openshift.io/url-org: rh-gitops-midstream
     pac.test.appstudio.openshift.io/url-repository: release
-    test.appstudio.openshift.io/added-to-global-candidate-list: '{"result":true,"reason":"Success","lastupdatedtime":"2026-02-25T10:56:53Z"}'
-    test.appstudio.openshift.io/git-reporter-status: '{"scenarios":{"conforma-gitops-1-17-gitops-1-17-20260225-105254-000":{"lastUpdateTime":"2026-02-25T10:57:22.76829704Z"},"enterprise-contract-gitops-1-17-gitops-1-17-20260225-105254-000":{"lastUpdateTime":"2026-02-25T10:58:09.158039577Z"}}}'
+    test.appstudio.openshift.io/added-to-global-candidate-list: '{"result":true,"reason":"Success","lastupdatedtime":"2026-02-27T13:43:08Z"}'
+    test.appstudio.openshift.io/git-reporter-status: '{"scenarios":{"conforma-gitops-1-17-gitops-1-17-20260227-133922-000":{"lastUpdateTime":"2026-02-27T13:43:45.664214534Z"},"enterprise-contract-gitops-1-17-gitops-1-17-20260227-133922-000":{"lastUpdateTime":"2026-02-27T13:44:26.894436262Z"}}}'
     test.appstudio.openshift.io/integration-workflow: push
-    test.appstudio.openshift.io/pipelinerunstarttime: "1772016774000"
+    test.appstudio.openshift.io/pipelinerunstarttime: "1772199562000"
     test.appstudio.openshift.io/pr-status: merged
     test.appstudio.openshift.io/source-repo-url: https://github.com/rh-gitops-midstream/release
-    test.appstudio.openshift.io/status: '[{"scenario":"conforma-gitops-1-17","status":"TestPassed","lastUpdateTime":"2026-02-25T10:57:22.76829704Z","details":"Integration
-      test passed","startTime":"2026-02-25T10:56:53.812850149Z","completionTime":"2026-02-25T10:57:22.76829704Z","testPipelineRunName":"conforma-gitops-1-17-bskcj"},{"scenario":"enterprise-contract-gitops-1-17","status":"TestPassed","lastUpdateTime":"2026-02-25T10:58:09.158039577Z","details":"Integration
-      test passed","startTime":"2026-02-25T10:56:53.848268135Z","completionTime":"2026-02-25T10:58:09.158039577Z","testPipelineRunName":"enterprise-contract-gitops-1-17-fmjmn"}]'
-  creationTimestamp: "2026-02-25T10:56:53Z"
+    test.appstudio.openshift.io/status: '[{"scenario":"conforma-gitops-1-17","status":"TestPassed","lastUpdateTime":"2026-02-27T13:43:45.664214534Z","details":"Integration
+      test passed","startTime":"2026-02-27T13:43:08.618702934Z","completionTime":"2026-02-27T13:43:45.664214534Z","testPipelineRunName":"conforma-gitops-1-17-xl5xs"},{"scenario":"enterprise-contract-gitops-1-17","status":"TestPassed","lastUpdateTime":"2026-02-27T13:44:26.894436262Z","details":"Integration
+      test passed","startTime":"2026-02-27T13:43:08.652677569Z","completionTime":"2026-02-27T13:44:26.894436262Z","testPipelineRunName":"enterprise-contract-gitops-1-17-b8wcx"}]'
+  creationTimestamp: "2026-02-27T13:43:08Z"
   generation: 1
   labels:
     appstudio.openshift.io/application: gitops-1-17
-    appstudio.openshift.io/build-pipelinerun: gitops-operator-bundle-1-17-on-push-qxdmx
+    appstudio.openshift.io/build-pipelinerun: gitops-operator-bundle-1-17-on-push-qr8nb
     appstudio.openshift.io/component: gitops-operator-bundle-1-17
     pac.test.appstudio.openshift.io/cancel-in-progress: "true"
-    pac.test.appstudio.openshift.io/check-run-id: "64821723339"
+    pac.test.appstudio.openshift.io/check-run-id: "65144100404"
     pac.test.appstudio.openshift.io/event-type: push
     pac.test.appstudio.openshift.io/original-prname: gitops-operator-bundle-1-17-on-push
-    pac.test.appstudio.openshift.io/pull-request: "693"
+    pac.test.appstudio.openshift.io/pull-request: "715"
     pac.test.appstudio.openshift.io/repository: dex-main
-    pac.test.appstudio.openshift.io/sha: 2e876a213e64b330a0fa7c3ac9ed9d0efb9eb225
+    pac.test.appstudio.openshift.io/sha: 4538189c73f4df40aa2015955451ad59d5957d79
     pac.test.appstudio.openshift.io/state: completed
     pac.test.appstudio.openshift.io/url-org: rh-gitops-midstream
     pac.test.appstudio.openshift.io/url-repository: release
-    test.appstudio.openshift.io/pipelinerunfinishtime: "1772017002"
+    test.appstudio.openshift.io/pipelinerunfinishtime: "1772199785"
     test.appstudio.openshift.io/type: component
-  name: gitops-1-17-20260225-105254-000
+  name: gitops-1-17-5-build-3
   namespace: rh-openshift-gitops-tenant
-  resourceVersion: "7469380760"
-  uid: 38ea4d62-05de-40ee-aca4-3c11ef389af7
+  resourceVersion: "7509599824"
+  uid: 65ab3718-743d-431b-9534-60ea242dfdec
 spec:
   application: gitops-1-17
   artifacts: {}
   components:
-  - containerImage: quay.io/redhat-user-workloads/rh-openshift-gitops-tenant/gitops-operator-bundle@sha256:372456b819bc322d05fe406f49c4113ecc9a2aafb755d8644bb12ad6b5c6ebd0
-    name: gitops-operator-bundle-1-17
-    source:
-      git:
-        revision: 2e876a213e64b330a0fa7c3ac9ed9d0efb9eb225
-        url: https://github.com/rh-gitops-midstream/release
-  - containerImage: quay.io/redhat-user-workloads/rh-openshift-gitops-tenant/argo-rollouts-rhel8@sha256:fbcf58c8a0bb9dd6d993c96b49e2274a4eff585dd3988f5433b320bc0bbf30fc
-    name: argo-rollouts-1-17
-    source:
-      git:
-        dockerfileUrl: containers/argo-rollouts/Dockerfile
-        revision: 575964b8117ff3075c967f1cffdbdc1648925d6a
-        url: https://github.com/rh-gitops-midstream/release.git
-  - containerImage: quay.io/redhat-user-workloads/rh-openshift-gitops-tenant/argocd-agent-rhel8@sha256:9d66a288c8e1eee71a5b237c19deae0f2b1796cf0ef950b9964fba2bf6200ca4
-    name: argocd-agent-1-17
-    source:
-      git:
-        dockerfileUrl: containers/argocd-agent/Dockerfile
-        revision: 575964b8117ff3075c967f1cffdbdc1648925d6a
-        url: https://github.com/rh-gitops-midstream/release.git
-  - containerImage: quay.io/redhat-user-workloads/rh-openshift-gitops-tenant/dex-rhel8@sha256:2106617fc30c9c6b2f2395b5fb7395cf13a0d32ef30ccd54fc5b58d880bfa3c4
-    name: dex-1-17
-    source:
-      git:
-        dockerfileUrl: containers/dex/Dockerfile
-        revision: 575964b8117ff3075c967f1cffdbdc1648925d6a
-        url: https://github.com/rh-gitops-midstream/release.git
-  - containerImage: quay.io/redhat-user-workloads/rh-openshift-gitops-tenant/must-gather-rhel8@sha256:658d08f93ce68f6eeb7d8bca43842f3072da2b3998ef53fc360faebd75654961
-    name: must-gather-1-17
-    source:
-      git:
-        dockerfileUrl: containers/must-gather/Dockerfile
-        revision: 575964b8117ff3075c967f1cffdbdc1648925d6a
-        url: https://github.com/rh-gitops-midstream/release.git
-  - containerImage: quay.io/redhat-user-workloads/rh-openshift-gitops-tenant/argocd-rhel8@sha256:9ae113f97812fd2a39965711e20d56f41eb9fc1c436c0b54965a3650d0a746d2
+  - containerImage: quay.io/redhat-user-workloads/rh-openshift-gitops-tenant/argocd-rhel8@sha256:6b2e5bd3e368b4279d9b46fd180672f9ba8c58b3051688733191d1b09735ae01
     name: argocd-1-17
     source:
       git:
         dockerfileUrl: containers/argocd/Dockerfile
-        revision: 575964b8117ff3075c967f1cffdbdc1648925d6a
+        revision: c23f4fc16e83ef62cd3fb1e2012bcfcb6c9330de
         url: https://github.com/rh-gitops-midstream/release.git
-  - containerImage: quay.io/redhat-user-workloads/rh-openshift-gitops-tenant/argocd-extensions-rhel8@sha256:1b87d335c32a2e45b0c0be36b6414cda1e798338ca20e5b7d9f1c1e5f8679373
+  - containerImage: quay.io/redhat-user-workloads/rh-openshift-gitops-tenant/argocd-extensions-rhel8@sha256:903ac9bf8122878a2b0c6c33a478fae6f1ce8c1d9b7026369000bff4628618ff
     name: argocd-extensions-1-17
     source:
       git:
         dockerfileUrl: containers/argocd-extensions/Dockerfile
-        revision: 575964b8117ff3075c967f1cffdbdc1648925d6a
+        revision: c23f4fc16e83ef62cd3fb1e2012bcfcb6c9330de
         url: https://github.com/rh-gitops-midstream/release.git
-  - containerImage: quay.io/redhat-user-workloads/rh-openshift-gitops-tenant/argocd-rhel9@sha256:18897579423c3ec2dd779c3ce0b2f10fc5d011116e4957f0ce9b78d1bf2b56e6
+  - containerImage: quay.io/redhat-user-workloads/rh-openshift-gitops-tenant/argocd-rhel9@sha256:16aa4fbc64a68ea6703a440e99cb43c4ba758e9bf12921edcaddeb95f0d99dbd
     name: argocd-rhel9-1-17
     source:
       git:
         dockerfileUrl: containers/argocd-rhel9/Dockerfile
-        revision: 575964b8117ff3075c967f1cffdbdc1648925d6a
+        revision: c23f4fc16e83ef62cd3fb1e2012bcfcb6c9330de
         url: https://github.com/rh-gitops-midstream/release.git
-  - containerImage: quay.io/redhat-user-workloads/rh-openshift-gitops-tenant/console-plugin-rhel8@sha256:494d2aadc4f0532be42e557ae085f3d2bc11d4d2b508e6e66a21324681f69875
+  - containerImage: quay.io/redhat-user-workloads/rh-openshift-gitops-tenant/console-plugin-rhel8@sha256:d06ea859c77478bf5b55e16d7a1be8a63626078008164fc406e745ccfd8a2282
     name: console-plugin-1-17
     source:
       git:
         dockerfileUrl: containers/console-plugin/Dockerfile
-        revision: 575964b8117ff3075c967f1cffdbdc1648925d6a
+        revision: c23f4fc16e83ef62cd3fb1e2012bcfcb6c9330de
         url: https://github.com/rh-gitops-midstream/release.git
-  - containerImage: quay.io/redhat-user-workloads/rh-openshift-gitops-tenant/gitops-rhel8@sha256:18245afe0654f2f917772ecde04422f74c7903047dd221bbf95c7ca374a4a5a0
+  - containerImage: quay.io/redhat-user-workloads/rh-openshift-gitops-tenant/gitops-rhel8@sha256:06619c493ef1fce45d8dd97ba9eb2fe8e64150547f765a5050afe6e933578087
     name: gitops-1-17
     source:
       git:
         dockerfileUrl: containers/gitops/Dockerfile
-        revision: 575964b8117ff3075c967f1cffdbdc1648925d6a
+        revision: c23f4fc16e83ef62cd3fb1e2012bcfcb6c9330de
         url: https://github.com/rh-gitops-midstream/release.git
-  - containerImage: quay.io/redhat-user-workloads/rh-openshift-gitops-tenant/gitops-rhel8-operator@sha256:94d18217f5a7b3171992132a1488526ec21b83984867696fcbefb4abbeffbbd1
+  - containerImage: quay.io/redhat-user-workloads/rh-openshift-gitops-tenant/gitops-rhel8-operator@sha256:7f1b472480fbe4067be16942fd681396173692bbff3288d890d147d6b68518ea
     name: gitops-operator-1-17
     source:
       git:
         dockerfileUrl: containers/gitops-operator/Dockerfile
-        revision: 575964b8117ff3075c967f1cffdbdc1648925d6a
+        revision: c23f4fc16e83ef62cd3fb1e2012bcfcb6c9330de
+        url: https://github.com/rh-gitops-midstream/release.git
+  - containerImage: quay.io/redhat-user-workloads/rh-openshift-gitops-tenant/gitops-operator-bundle@sha256:28f4abb103e42261349702992b66571b260509fd25546bfe6e0a2dc6b916822f
+    name: gitops-operator-bundle-1-17
+    source:
+      git:
+        revision: 4538189c73f4df40aa2015955451ad59d5957d79
+        url: https://github.com/rh-gitops-midstream/release
+  - containerImage: quay.io/redhat-user-workloads/rh-openshift-gitops-tenant/argo-rollouts-rhel8@sha256:87d97b250c3bdf6f16e305c4a1871db3521c74265f0f37d6a5036157357847ec
+    name: argo-rollouts-1-17
+    source:
+      git:
+        dockerfileUrl: containers/argo-rollouts/Dockerfile
+        revision: c23f4fc16e83ef62cd3fb1e2012bcfcb6c9330de
+        url: https://github.com/rh-gitops-midstream/release.git
+  - containerImage: quay.io/redhat-user-workloads/rh-openshift-gitops-tenant/argocd-agent-rhel8@sha256:3d7d94f49f9aabca65e854b0b29f2dc555c7af9bf4764a731ba712fc23ad2a0b
+    name: argocd-agent-1-17
+    source:
+      git:
+        dockerfileUrl: containers/argocd-agent/Dockerfile
+        revision: c23f4fc16e83ef62cd3fb1e2012bcfcb6c9330de
+        url: https://github.com/rh-gitops-midstream/release.git
+  - containerImage: quay.io/redhat-user-workloads/rh-openshift-gitops-tenant/dex-rhel8@sha256:4d610920ff9259a24859c7fea54f257d9ebf71a5719f41f9cc568f8b0e5e4361
+    name: dex-1-17
+    source:
+      git:
+        dockerfileUrl: containers/dex/Dockerfile
+        revision: c23f4fc16e83ef62cd3fb1e2012bcfcb6c9330de
+        url: https://github.com/rh-gitops-midstream/release.git
+  - containerImage: quay.io/redhat-user-workloads/rh-openshift-gitops-tenant/must-gather-rhel8@sha256:847dfb132d5f8c4c32bee323e4475849def5f10c49ca79cdcaabaf14f1e4e1c8
+    name: must-gather-1-17
+    source:
+      git:
+        dockerfileUrl: containers/must-gather/Dockerfile
+        revision: c23f4fc16e83ef62cd3fb1e2012bcfcb6c9330de
         url: https://github.com/rh-gitops-midstream/release.git
 status:
   conditions:
-  - lastTransitionTime: "2026-02-25T10:58:09Z"
+  - lastTransitionTime: "2026-02-27T13:44:26Z"
     message: Snapshot integration status condition is finished since all testing pipelines
       completed
     reason: Finished
     status: "True"
     type: AppStudioIntegrationStatus
-  - lastTransitionTime: "2026-02-25T10:58:09Z"
+  - lastTransitionTime: "2026-02-27T13:44:26Z"
     message: All Integration Pipeline tests passed
     reason: Passed
     status: "True"
     type: AppStudioTestSucceeded
-  - lastTransitionTime: "2026-02-25T10:58:09Z"
+  - lastTransitionTime: "2026-02-27T13:44:26Z"
     message: Skipping auto-release of the Snapshot because no ReleasePlans have the
       'auto-release' label set to 'true'
     reason: AutoReleased

@@ -14,20 +14,26 @@ spec:
         - key: CVE-2025-12816
           component: console-plugin-rhel8-1-17
         - key: CVE-2025-66418
-          component: must-gather-rhel8-1-17
-        - key: CVE-2025-13465
           component: console-plugin-rhel8-1-17
-        - key: CVE-2025-61726
+        - key: CVE-2025-66418 
+          component: must-gather-rhel8-1-17
+        - key: CVE-2025-66471
+          component: console-plugin-rhel8-1-17
+        - key: CVE-2026-21441 
+          component: console-plugin-rhel8-1-17
+        - key: CVE-2025-13465 
+          component: console-plugin-rhel8-1-17
+        - key: CVE-2025-61726 
           component: argo-rollouts-rhel8-1-17
-        - key: CVE-2025-61726
+        - key: CVE-2025-61726 
           component: argocd-agent-rhel8-1-17
-        - key: CVE-2025-61726
+        - key: CVE-2025-61726 
           component: argocd-rhel8-1-17
         - key: CVE-2025-61726
           component: argocd-rhel9-1-17
-        - key: CVE-2025-61726 
+        - key: CVE-2025-61726
           component: dex-rhel8-1-17
-        - key: CVE-2025-61726 
-          component: gitops-rhel8-1-17
         - key: CVE-2025-61726
           component: gitops-rhel8-1-17
+        - key: CVE-2025-61726 
+          component: gitops-rhel8-operator-1-17
